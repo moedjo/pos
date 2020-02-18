@@ -1,0 +1,10 @@
+name: Products
+form: $/dojo/pos/models/product/fields.yaml
+modelClass: Dojo\Pos\Models\Product
+defaultRedirect: dojo/pos/products
+create:
+    redirect: 'dojo/pos/products/update/:id'
+    redirectClose: dojo/pos/products
+update:
+    redirect: dojo/pos/products
+    redirectClose: dojo/pos/products

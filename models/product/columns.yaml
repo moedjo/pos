@@ -1,0 +1,4 @@
+columns:
+    id:
+        label: 'dojo.pos::lang.product.id'
+        type: number
