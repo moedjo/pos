@@ -12,14 +12,16 @@ class BuilderTableCreateDojoPosProducts extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->string('barcode', 100);
-            $table->string('product_name', 100);
-            
-            $table->decimal('wholesale_price', 15, 2);
-            $table->decimal('retail_price', 15, 2);
-
+            $table->string('name', 100);
 
             $table->integer('quantity')->default(0);
             $table->integer('reorder_level')->default(0);
+
+            $table->decimal('wholesale_price', 15, 2)->default(0);
+            $table->decimal('retail_price', 15, 2)->default(0);
+
+
+            $table->integer('sort_order')->default(0);
             
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();

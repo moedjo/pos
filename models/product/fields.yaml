@@ -1,5 +1,37 @@
 fields:
-    id:
-        label: Number
-        span: auto
+    barcode:
+        label: 'dojo.pos::lang.product.barcode'
+        span: left
+        placeholder: 'dojo.pos::lang.product.barcode'
+        type: text
+    name:
+        label: 'dojo.pos::lang.product.product_name'
+        span: left
+        placeholder: 'dojo.pos::lang.product.product_name'
+        type: text
+    quantity:
+        label: 'dojo.pos::lang.product.quantity'
+        span: left
+        placeholder: 'dojo.pos::lang.product.quantity'
         type: number
+    reorder_level:
+        label: 'dojo.pos::lang.product.reorder_level'
+        span: left
+        default: 'dojo.pos::lang.product.reorder_level'
+        type: number
+    wholesale_price:
+        label: 'dojo.pos::lang.product.wholesale_price'
+        span: left
+        placeholder: 'dojo.pos::lang.product.wholesale_price'
+        type: number
+    retail_price:
+        label: 'dojo.pos::lang.product.retail_price'
+        span: left
+        placeholder: 'dojo.pos::lang.product.retail_price'
+        type: number
+    description:
+        label: 'dojo.pos::lang.product.description'
+        size: ''
+        span: left
+        placeholder: 'dojo.pos::lang.product.description'
+        type: textarea

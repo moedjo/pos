@@ -1,4 +1,35 @@
 columns:
     id:
-        label: 'dojo.pos::lang.product.id'
+        label: 'dojo.pos::lang.product.product_id'
         type: number
+        sortable: true
+    barcode:
+        label: 'dojo.pos::lang.product.barcode'
+        type: text
+        searchable: true
+    name:
+        label: 'dojo.pos::lang.product.product_name'
+        type: text
+        searchable: true
+    quantity:
+        label: 'dojo.pos::lang.product.quantity'
+        type: number
+        sortable: true
+    reorder_level:
+        label: 'dojo.pos::lang.product.reorder_level'
+        type: number
+        sortable: true
+    wholesale_price:
+        label: 'dojo.pos::lang.product.wholesale_price'
+        type: number
+        invisible: true
+        sortable: true
+    retail_price:
+        label: 'dojo.pos::lang.product.retail_price'
+        type: number
+        invisible: true
+        sortable: true
+    description:
+        label: 'dojo.pos::lang.product.description'
+        type: text
+        invisible: true
