@@ -3,3 +3,4 @@
 1.0.2:
     - 'Created table dojo_pos_products'
     - builder_table_create_dojo_pos_products.php
+    - builder_table_create_dojo_pos_product_categories.php

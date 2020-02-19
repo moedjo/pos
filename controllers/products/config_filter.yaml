@@ -1,0 +1,13 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+  quantity:
+      label: 'dojo.pos::lang.product.quantity'
+      type: numberrange
+      conditions: quantity >= ':min' and quantity <= ':max'
+  reorder_level:
+    label: 'dojo.pos::lang.product.reorder_level'
+    type: numberrange
+    conditions: reorder_level >= ':min' and reorder_level <= ':max'

@@ -28,6 +28,9 @@ class BuilderTableCreateDojoPosProducts extends Migration
             $table->timestamp('deleted_at')->nullable();
 
             $table->string('description');
+
+            $table->integer('product_id')->unsigned()->nullable();
+            $table->foreign('product_id')->references('id')->on('dojo_pos_products');
         });
     }
     
