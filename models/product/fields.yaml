@@ -1,37 +1,50 @@
 fields:
-    barcode:
-        label: 'dojo.pos::lang.product.barcode'
-        span: left
-        placeholder: 'dojo.pos::lang.product.barcode'
-        type: text
     name:
         label: 'dojo.pos::lang.product.product_name'
         span: left
         placeholder: 'dojo.pos::lang.product.product_name'
         type: text
-    quantity:
-        label: 'dojo.pos::lang.product.quantity'
+    barcode:
+        label: 'dojo.pos::lang.product.barcode'
+        span: right
+        placeholder: 'dojo.pos::lang.product.barcode'
+        type: text
+    product_category:
+        label: 'dojo.pos::lang.product.product_category'
         span: left
-        placeholder: 'dojo.pos::lang.product.quantity'
-        type: number
-    reorder_level:
-        label: 'dojo.pos::lang.product.reorder_level'
-        span: left
-        default: 'dojo.pos::lang.product.reorder_level'
-        type: number
-    wholesale_price:
-        label: 'dojo.pos::lang.product.wholesale_price'
-        span: left
-        placeholder: 'dojo.pos::lang.product.wholesale_price'
-        type: number
-    retail_price:
-        label: 'dojo.pos::lang.product.retail_price'
-        span: left
-        placeholder: 'dojo.pos::lang.product.retail_price'
-        type: number
+        placeholder: 'dojo.pos::lang.product.product_category'
+        type: relation
+        nameFrom: name
     description:
         label: 'dojo.pos::lang.product.description'
         size: ''
         span: left
         placeholder: 'dojo.pos::lang.product.description'
         type: textarea
+tabs:
+    fields:
+        wholesale_price:
+            label: 'dojo.pos::lang.product.wholesale_price'
+            span: left
+            placeholder: 'dojo.pos::lang.product.wholesale_price'
+            type: number
+            step: 1000
+        retail_price:
+            label: 'dojo.pos::lang.product.retail_price'
+            span: right
+            placeholder: 'dojo.pos::lang.product.retail_price'
+            type: number
+            step: 1000
+secondaryTabs:
+    fields:
+        quantity:
+            label: 'dojo.pos::lang.product.quantity'
+            span: full
+            placeholder: 'dojo.pos::lang.product.quantity'
+            type: number
+        reorder_level:
+            label: 'dojo.pos::lang.product.reorder_level'
+            span: full
+            placeholder: 'dojo.pos::lang.product.reorder_level'
+            default: 'dojo.pos::lang.product.reorder_level'
+            type: number

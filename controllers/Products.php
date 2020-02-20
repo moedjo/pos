@@ -26,4 +26,16 @@ class Products extends Controller
         parent::__construct();
         BackendMenu::setContext('Dojo.Pos', 'products-menu-item');
     }
+
+    public function create($context = null)
+    {
+        $this->bodyClass = 'compact-container';
+        return $this->asExtension('FormController')->create($context);
+    }
+
+     public function update($recordId = null, $context = null)
+    {
+        $this->bodyClass = 'compact-container';
+        return $this->asExtension('FormController')->update($recordId,$context);
+    }
 }

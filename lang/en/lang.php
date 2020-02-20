@@ -5,9 +5,11 @@
     ],
     'permission' => [
         'access_products' => 'Access Products',
+        'access_product_categories' => 'Access Product Categories',
     ],
     'menu_item' => [
         'products' => 'Products',
+        'product_categories' => 'Product Categories',
     ],
     'product' => [
         'product_id' => 'Product Id',
@@ -18,5 +20,6 @@
         'quantity' => 'Quantity',
         'reorder_level' => 'Reorder Level',
         'description' => 'Description',
+        'product_category' => 'Product Category',
     ],
 ];

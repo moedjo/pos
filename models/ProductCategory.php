@@ -24,4 +24,7 @@ class ProductCategory extends Model
      */
     public $rules = [
     ];
+
+
+    use \October\Rain\Database\Traits\Sortable;
 }

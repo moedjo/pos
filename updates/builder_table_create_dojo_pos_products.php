@@ -29,8 +29,8 @@ class BuilderTableCreateDojoPosProducts extends Migration
 
             $table->string('description');
 
-            $table->integer('product_id')->unsigned()->nullable();
-            $table->foreign('product_id')->references('id')->on('dojo_pos_products');
+            $table->integer('product_category_id')->unsigned()->nullable();
+            $table->foreign('product_category_id')->references('id')->on('dojo_pos_product_categories');
         });
     }
     

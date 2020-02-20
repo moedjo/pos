@@ -8,6 +8,9 @@ permissions:
     access_products:
         tab: 'dojo.pos::lang.permission.access_products'
         label: 'dojo.pos::lang.permission.access_products'
+    access_product_categories:
+        tab: 'dojo.pos::lang.permission.access_product_categories'
+        label: 'dojo.pos::lang.permission.access_product_categories'
 navigation:
     products-menu-item:
         label: 'dojo.pos::lang.menu_item.products'
@@ -15,3 +18,12 @@ navigation:
         icon: icon-bookmark
         permissions:
             - access_products
+        sideMenu:
+            side-menu-item:
+                label: 'dojo.pos::lang.menu_item.products'
+                url: /
+                icon: icon-sitemap
+            product-categories-menu-item:
+                label: 'dojo.pos::lang.menu_item.product_categories'
+                url: dojo/pos/productcategories
+                icon: icon-simplybuilt

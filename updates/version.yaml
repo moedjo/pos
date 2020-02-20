@@ -1,6 +1,9 @@
 1.0.1:
     - 'Initialize plugin.'
 1.0.2:
-    - 'Created table dojo_pos_products'
-    - builder_table_create_dojo_pos_products.php
+    - 'Created tables'
     - builder_table_create_dojo_pos_product_categories.php
+    - builder_table_create_dojo_pos_products.php
+1.0.3:
+    - 'Created table dojo_pos_inventory_data_trackings'
+    - builder_table_create_dojo_pos_inventory_data_trackings.php

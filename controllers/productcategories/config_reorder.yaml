@@ -1,0 +1,4 @@
+title: ProductCategories
+modelClass: Dojo\Pos\Models\ProductCategory
+toolbar:
+    buttons: reorder_toolbar

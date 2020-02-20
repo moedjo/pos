@@ -1,0 +1,10 @@
+name: ProductCategories
+form: $/dojo/pos/models/productcategory/fields.yaml
+modelClass: Dojo\Pos\Models\ProductCategory
+defaultRedirect: dojo/pos/productcategories
+create:
+    redirect: 'dojo/pos/productcategories/update/:id'
+    redirectClose: dojo/pos/productcategories
+update:
+    redirect: dojo/pos/productcategories
+    redirectClose: dojo/pos/productcategories
