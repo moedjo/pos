@@ -24,7 +24,7 @@ class Products extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Dojo.Pos', 'products-menu-item');
+        BackendMenu::setContext('Dojo.Pos', 'master-data-menu-item','product-menu-item');
     }
 
     public function create($context = null)

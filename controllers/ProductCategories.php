@@ -18,6 +18,6 @@ class ProductCategories extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Dojo.Pos', 'products-menu-item', 'product-categories-menu-item');
+        BackendMenu::setContext('Dojo.Pos', 'master-data-menu-item', 'product-category-menu-item');
     }
 }

@@ -1,4 +1,8 @@
 columns:
+    id:
+        label: 'dojo.pos::lang.product_category.id'
+        type: number
     name:
-        label: NAme
+        label: 'dojo.pos::lang.product_category.name'
         type: text
+        searchable: true

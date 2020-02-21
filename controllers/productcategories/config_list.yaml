@@ -1,12 +1,12 @@
-list: $/dojo/pos/models/productcategory/columns.yaml
+title: 'dojo.pos::lang.menu_item.product_categories'
 modelClass: Dojo\Pos\Models\ProductCategory
-title: ProductCategories
+list: $/dojo/pos/models/productcategory/columns.yaml
+recordUrl: 'dojo/pos/productcategories/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
-recordsPerPage: 20
 toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'dojo/pos/productcategories/update/:id'

@@ -1,6 +1,6 @@
-name: ProductCategories
-form: $/dojo/pos/models/productcategory/fields.yaml
+name: 'dojo.pos::lang.menu_item.product_category'
 modelClass: Dojo\Pos\Models\ProductCategory
+form: $/dojo/pos/models/productcategory/fields.yaml
 defaultRedirect: dojo/pos/productcategories
 create:
     redirect: 'dojo/pos/productcategories/update/:id'
@@ -8,3 +8,4 @@ create:
 update:
     redirect: dojo/pos/productcategories
     redirectClose: dojo/pos/productcategories
+preview: {  }

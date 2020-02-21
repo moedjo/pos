@@ -1,4 +1,4 @@
-title: ProductCategories
+title: 'dojo.pos::lang.menu_item.product_categories'
 modelClass: Dojo\Pos\Models\ProductCategory
 toolbar:
     buttons: reorder_toolbar

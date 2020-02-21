@@ -1,5 +1,6 @@
 fields:
     name:
-        label: Text
+        label: 'dojo.pos::lang.product_category.name'
         span: auto
+        placeholder: 'dojo.pos::lang.product_category.name'
         type: text

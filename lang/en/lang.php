@@ -12,6 +12,8 @@
         'products' => 'Products',
         'product_categories' => 'Product Categories',
         'inventory_data_trackings' => 'Inventory Data Trackings',
+        'product_category' => 'Product Category',
+        'master_data' => 'Master Data',
     ],
     'product' => [
         'product_id' => 'Product Id',
@@ -23,6 +25,11 @@
         'reorder_level' => 'Reorder Level',
         'description' => 'Description',
         'product_category' => 'Product Category',
+    ],
+    'product_category' => [
+        'id' => 'Product Category Id',
+        'name' => 'Product Category Name'
+
     ],
     'inventory_data_tracking' => [
         'id' => 'Id',
