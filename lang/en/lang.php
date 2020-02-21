@@ -6,10 +6,12 @@
     'permission' => [
         'access_products' => 'Access Products',
         'access_product_categories' => 'Access Product Categories',
+        'access_inventory_data_trackings' => 'Access Inventory Data Trackings',
     ],
     'menu_item' => [
         'products' => 'Products',
         'product_categories' => 'Product Categories',
+        'inventory_data_trackings' => 'Inventory Data Trackings',
     ],
     'product' => [
         'product_id' => 'Product Id',
@@ -21,5 +23,9 @@
         'reorder_level' => 'Reorder Level',
         'description' => 'Description',
         'product_category' => 'Product Category',
+    ],
+    'inventory_data_tracking' => [
+        'id' => 'Id',
+        'remarks' => 'Remarks',
     ],
 ];

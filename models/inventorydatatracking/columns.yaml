@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: 'dojo.pos::lang.inventory_data_tracking.id'
+        type: number
+    remaks:
+        label: 'dojo.pos::lang.inventory_data_tracking.remarks'
+        type: text
+    user:
+        label: Group
+        relation: user
+        select: concat(first_name, ' ', last_name)

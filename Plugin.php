@@ -11,4 +11,16 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+    public function registerReportWidgets()
+    {
+        return [
+            'Dojo\Pos\ReportWidgets\TrafficSources' => [
+                'label' => 'bangke',
+                'context' => 'dashboard',
+                'permissions' => [
+                ],
+            ],
+        ];
+    }
 }

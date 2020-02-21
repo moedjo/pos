@@ -11,19 +11,31 @@ permissions:
     access_product_categories:
         tab: 'dojo.pos::lang.permission.access_product_categories'
         label: 'dojo.pos::lang.permission.access_product_categories'
+    access_inventory_data_trackings:
+        tab: 'dojo.pos::lang.permission.access_inventory_data_trackings'
+        label: 'dojo.pos::lang.permission.access_inventory_data_trackings'
 navigation:
     products-menu-item:
         label: 'dojo.pos::lang.menu_item.products'
         url: dojo/pos/products
         icon: icon-bookmark
-        permissions:
-            - access_products
+        permissions: {  }
         sideMenu:
             side-menu-item:
                 label: 'dojo.pos::lang.menu_item.products'
                 url: /
                 icon: icon-sitemap
+                permissions:
+                    - access_products
             product-categories-menu-item:
                 label: 'dojo.pos::lang.menu_item.product_categories'
                 url: dojo/pos/productcategories
                 icon: icon-simplybuilt
+                permissions:
+                    - access_product_categories
+            inventory-data-trackings-menu-item:
+                label: 'dojo.pos::lang.menu_item.inventory_data_trackings'
+                url: dojo/pos/inventorydatatrackings
+                icon: icon-sitemap
+                permissions:
+                    - access_inventory_data_trackings

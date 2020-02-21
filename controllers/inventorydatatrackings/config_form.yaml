@@ -1,0 +1,10 @@
+name: InventoryDataTrackings
+form: $/dojo/pos/models/inventorydatatracking/fields.yaml
+modelClass: Dojo\Pos\Models\InventoryDataTracking
+defaultRedirect: dojo/pos/inventorydatatrackings
+create:
+    redirect: 'dojo/pos/inventorydatatrackings/update/:id'
+    redirectClose: dojo/pos/inventorydatatrackings
+update:
+    redirect: dojo/pos/inventorydatatrackings
+    redirectClose: dojo/pos/inventorydatatrackings
