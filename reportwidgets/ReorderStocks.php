@@ -2,11 +2,16 @@
 namespace Dojo\Pos\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
+use Dojo\Pos\Models\Product;
 
-class TrafficSources extends ReportWidgetBase
+class ReorderStocks extends ReportWidgetBase
 {
     public function render()
     {
+
+        trace_sql();
+
+        $this->vars['products'] = Product::whereRaw('quantity <= reorder_level')->lists('name', 'quantity');;
         return $this->makePartial('widget');
     }
 

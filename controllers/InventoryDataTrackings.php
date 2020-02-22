@@ -19,4 +19,10 @@ class InventoryDataTrackings extends Controller
         parent::__construct();
         BackendMenu::setContext('Dojo.Pos', 'master-data-menu-item', 'inventory-data-trackings-menu-item');
     }
+
+    public function listInjectRowClass($record, $definition = null)
+    {
+        return 'nolink';
+
+    }
 }

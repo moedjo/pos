@@ -2,10 +2,22 @@ columns:
     id:
         label: 'dojo.pos::lang.inventory_data_tracking.id'
         type: number
+    product:
+        label: 'dojo.pos::lang.inventory_data_tracking.product'
+        type: text
+        select: name
+        relation: product
+    in_out_quantity:
+        label: 'dojo.pos::lang.inventory_data_tracking.in_out_quantity'
+        type: number
+    user:
+        label: 'dojo.pos::lang.inventory_data_tracking.user'
+        type: text
+        select: 'concat(first_name, '' '', last_name)'
+        relation: user
     remaks:
         label: 'dojo.pos::lang.inventory_data_tracking.remarks'
         type: text
-    user:
-        label: Group
-        relation: user
-        select: concat(first_name, ' ', last_name)
+    created_at:
+        label: 'dojo.pos::lang.inventory_data_tracking.created_at'
+        type: datetime

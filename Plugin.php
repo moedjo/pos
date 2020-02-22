@@ -15,10 +15,11 @@ class Plugin extends PluginBase
     public function registerReportWidgets()
     {
         return [
-            'Dojo\Pos\ReportWidgets\TrafficSources' => [
-                'label' => 'bangke',
+            'Dojo\Pos\ReportWidgets\ReorderStocks' => [
+                'label' => 'dojo.pos::lang.stock.reorder_stock',
                 'context' => 'dashboard',
                 'permissions' => [
+
                 ],
             ],
         ];

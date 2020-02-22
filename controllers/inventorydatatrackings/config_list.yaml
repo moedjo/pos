@@ -1,12 +1,12 @@
-list: $/dojo/pos/models/inventorydatatracking/columns.yaml
+title: 'dojo.pos::lang.menu_item.inventory_data_trackings'
 modelClass: Dojo\Pos\Models\InventoryDataTracking
-title: InventoryDataTrackings
+list: $/dojo/pos/models/inventorydatatracking/columns.yaml
+recordUrl: 'dojo/pos/inventorydatatrackings/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
-showSetup: true
-showCheckboxes: true
 recordsPerPage: 20
+showSetup: true
+showCheckboxes: false
 toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'dojo/pos/inventorydatatrackings/update/:id'

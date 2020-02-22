@@ -1,6 +1,6 @@
-name: InventoryDataTrackings
-form: $/dojo/pos/models/inventorydatatracking/fields.yaml
+name: 'dojo.pos::lang.menu_item.inventory_data_tracking'
 modelClass: Dojo\Pos\Models\InventoryDataTracking
+form: $/dojo/pos/models/inventorydatatracking/fields.yaml
 defaultRedirect: dojo/pos/inventorydatatrackings
 create:
     redirect: 'dojo/pos/inventorydatatrackings/update/:id'

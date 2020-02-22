@@ -1,0 +1,13 @@
+<div class="report-widget">
+    <h3><?= e(trans('dojo.pos::lang.stock.reorder_stock')) ?></h3>
+
+    <div class="control-chart centered wrap-legend" data-control="chart-pie" data-size="300" data-center-text="">
+        <ul>
+
+            <?php foreach ($products as $key => $product_name): ?>
+                <li><?= $product_name ?> <span><?= $key ?></span></li>
+            <?php endforeach ?>
+
+        </ul>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('dojo/pos/inventorydatatrackings') ?>">InventoryDataTrackings</a></li>
+        <li><a href="<?= Backend::url('dojo/pos/inventorydatatrackings') ?>"><?= e(trans('dojo.pos::lang.menu_item.inventory_data_trackings')) ?></a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>

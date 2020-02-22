@@ -1,20 +1,22 @@
 fields:
+    product:
+        label: 'dojo.pos::lang.inventory_data_tracking.product'
+        nameFrom: name
+        descriptionFrom: description
+        prompt: 'dojo.pos::lang.inventory_data_tracking.find_product'
+        list: ~/plugins/dojo/pos/models/product/columns.yaml
+        span: left
+        type: recordfinder
+    in_out_quantity:
+        label: 'dojo.pos::lang.inventory_data_tracking.in_out_quantity'
+        span: left
+        placeholder: 'dojo.pos::lang.inventory_data_tracking.in_out_quantity'
+        commentAbove: 'dojo.pos::lang.inventory_data_tracking.in_out_quantity_comment'
+        type: number
     remaks:
         label: 'dojo.pos::lang.inventory_data_tracking.remarks'
-        span: auto
+        size: small
+        span: left
         placeholder: 'dojo.pos::lang.inventory_data_tracking.remarks'
-        type: text
-        commentAbove: test
-    product:
-        label: 'Product coy'
-        type: recordfinder
-        list: ~/plugins/dojo/pos/models/product/columns.yaml
-        recordsPerPage: 10
-        title: 'Find Record'
-        prompt: 'Click the Find button to find a user'
-        modelClass: Dojo\Pos\Models\Product
-    in_out_quantity:
-        label: quantitit
-        span: auto
-        placeholder: 'dojo.pos::lang.inventory_data_tracking.remarks'
-        type: number
+        default: ''
+        type: textarea

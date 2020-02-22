@@ -15,6 +15,7 @@
         'inventory_data_trackings' => 'Inventory Data Trackings',
         'product_category' => 'Product Category',
         'master_data' => 'Master Data',
+        'inventory_data_tracking' => 'Inventory Data Tracking',
     ],
     'product' => [
         'product_id' => 'Product Id',
@@ -38,5 +39,14 @@
     'inventory_data_tracking' => [
         'id' => 'Id',
         'remarks' => 'Remarks',
+        'user' => 'User',
+        'in_out_quantity' => 'In/Out Quantity',
+        'product' => 'Product',
+        'created_at' => 'Created At',
+        'find_product'=> 'Click the Find button to find a product',
+        'in_out_quantity_comment'=>'Inventory to add or subtract.'
     ],
+    'stock' => [
+        'reorder_stock' => 'Reorder Stock'
+    ]
 ];
