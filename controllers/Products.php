@@ -9,7 +9,7 @@ class Products extends Controller
         'Backend\Behaviors\ListController',
         'Backend\Behaviors\FormController',
         'Backend\Behaviors\ReorderController',
-        'Backend.Behaviors.RelationController',
+        'Backend\Behaviors\RelationController',
     ];
 
     public $listConfig = 'config_list.yaml';
@@ -38,4 +38,18 @@ class Products extends Controller
         $this->bodyClass = 'compact-container';
         return $this->asExtension('FormController')->update($recordId,$context);
     }
+
+    public function listInjectRowClass($record, $definition = null)
+    {
+        if ($record->trashed()) {
+            return 'nolink strike deleted';
+        }
+    }
+
+    public function formExtendQuery($query)
+    {
+        // $query->withTrashed();
+    }
+
+
 }

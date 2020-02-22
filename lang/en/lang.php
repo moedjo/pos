@@ -10,6 +10,7 @@
     ],
     'menu_item' => [
         'products' => 'Products',
+        'product' => 'Product',
         'product_categories' => 'Product Categories',
         'inventory_data_trackings' => 'Inventory Data Trackings',
         'product_category' => 'Product Category',
@@ -24,7 +25,10 @@
         'quantity' => 'Quantity',
         'reorder_level' => 'Reorder Level',
         'description' => 'Description',
-        'product_category' => 'Product Category',
+        'product_category' => 'Category',
+        'price' => 'Price',
+        'inventory' => 'Inventory',
+        'photos' => 'Photos',
     ],
     'product_category' => [
         'id' => 'Product Category Id',

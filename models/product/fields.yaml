@@ -18,33 +18,60 @@ fields:
     description:
         label: 'dojo.pos::lang.product.description'
         size: ''
-        span: left
+        span: right
         placeholder: 'dojo.pos::lang.product.description'
         type: textarea
 tabs:
+    defaultTab: 'dojo.pos::lang.product.price'
+    icons:
+        dojo.pos::lang.product.price: icon-money
+        dojo.pos::lang.product.inventory: icon-suitcase
     fields:
         wholesale_price:
             label: 'dojo.pos::lang.product.wholesale_price'
             span: left
             placeholder: 'dojo.pos::lang.product.wholesale_price'
+            tab: 'dojo.pos::lang.product.price'
             type: number
             step: 1000
+            default: 0
         retail_price:
             label: 'dojo.pos::lang.product.retail_price'
-            span: right
+            span: left
             placeholder: 'dojo.pos::lang.product.retail_price'
+            tab: 'dojo.pos::lang.product.price'
             type: number
             step: 1000
-secondaryTabs:
-    fields:
+            default: 0
         quantity:
             label: 'dojo.pos::lang.product.quantity'
-            span: full
+            tab: 'dojo.pos::lang.product.inventory'
+            span: left
             placeholder: 'dojo.pos::lang.product.quantity'
             type: number
+            default: 0
         reorder_level:
             label: 'dojo.pos::lang.product.reorder_level'
-            span: full
+            tab: 'dojo.pos::lang.product.inventory'
+            span: left
+            default: 0
             placeholder: 'dojo.pos::lang.product.reorder_level'
             default: 'dojo.pos::lang.product.reorder_level'
             type: number
+secondaryTabs:
+    fields:
+        photos:
+            label: 'dojo.pos::lang.product.photos'
+            type: fileupload
+            mode: image
+            imageHeight: 700
+            imageWidth: 700
+            thumbOptions:
+                mode: crop
+                offset:
+                    - 0
+                    - 0
+                quality: 90
+                sharpen: 0
+                interlace: false
+                extension: auto

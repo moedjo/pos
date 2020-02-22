@@ -1,4 +1,4 @@
-name: Products
+name: 'dojo.pos::lang.menu_item.product'
 form: $/dojo/pos/models/product/fields.yaml
 modelClass: Dojo\Pos\Models\Product
 defaultRedirect: dojo/pos/products

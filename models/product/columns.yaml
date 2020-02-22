@@ -3,14 +3,20 @@ columns:
         label: 'dojo.pos::lang.product.product_id'
         type: number
         sortable: true
-    barcode:
-        label: 'dojo.pos::lang.product.barcode'
-        type: text
-        searchable: true
     name:
         label: 'dojo.pos::lang.product.product_name'
         type: text
         searchable: true
+    barcode:
+        label: 'dojo.pos::lang.product.barcode'
+        type: text
+        searchable: true
+    product_category:
+        label: 'dojo.pos::lang.product.product_category'
+        type: text
+        searchable: false
+        select: name
+        relation: product_category
     quantity:
         label: 'dojo.pos::lang.product.quantity'
         type: number

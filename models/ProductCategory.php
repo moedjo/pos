@@ -26,4 +26,9 @@ class ProductCategory extends Model
     ];
 
     use \October\Rain\Database\Traits\Sortable;
+
+    public function getProductCategoryOptions($scopes = null)
+    {
+        return ProductCategory::lists('name', 'id');
+    }
 }

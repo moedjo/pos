@@ -1,7 +1,6 @@
 # ===================================
 # Filter Scope Definitions
 # ===================================
-
 scopes:
   quantity:
       label: 'dojo.pos::lang.product.quantity'
@@ -11,3 +10,14 @@ scopes:
     label: 'dojo.pos::lang.product.reorder_level'
     type: numberrange
     conditions: reorder_level >= ':min' and reorder_level <= ':max'
+  product_category:
+    label: 'dojo.pos::lang.product.product_category'
+    type: group
+    conditions: product_category_id in (:filtered)
+    modelClass: Dojo\Pos\Models\ProductCategory
+    options: getProductCategoryOptions
+  show_deleted:
+        label: backend::lang.user.show_deleted
+        type: checkbox
+        scope: withTrashed
+        default: 0

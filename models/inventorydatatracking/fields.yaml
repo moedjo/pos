@@ -4,21 +4,14 @@ fields:
         span: auto
         placeholder: 'dojo.pos::lang.inventory_data_tracking.remarks'
         type: text
+        commentAbove: test
     product:
-        label: Product coy
+        label: 'Product coy'
         type: recordfinder
         list: ~/plugins/dojo/pos/models/product/columns.yaml
         recordsPerPage: 10
-        title: Find Record
-        prompt: Click the Find button to find a user
-        # keyFrom: id
-        # nameFrom: name
-        # descriptionFrom: email
-        # conditions: email = "bob@example.com"
-        # scope: whereActive
-        # searchMode: all
-        # searchScope: searchUsers
-        # useRelation: false
+        title: 'Find Record'
+        prompt: 'Click the Find button to find a user'
         modelClass: Dojo\Pos\Models\Product
     in_out_quantity:
         label: quantitit
